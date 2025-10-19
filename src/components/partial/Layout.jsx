@@ -1,8 +1,18 @@
+import Header from "../header/Header";
+
 function Layout({ children }) {
     return (
-        <div>
-
-        </div>
+        <>
+            <div>
+                <Header />
+            </div>
+            <div>
+                {children}
+            </div>
+            <div>
+                footer
+            </div>
+        </>
     );
 }
 
