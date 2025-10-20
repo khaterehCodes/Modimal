@@ -7,7 +7,7 @@ import Image from '../../atom/customImage/Image';
 import Icon from '../../atom/icons/Icon';
 function ModiWeek() {
     return (
-        <div className='md:w-[1350px] md:h-[600px] flex flex-col justify-around'>
+        <div className='hidden md:w-[1350px] md:h-[600px] md:flex flex-col justify-around'>
             <P className='md:text-[32px] font-semibold'>Modiweek</P>
             <div className='w-full md:h-[500px] flex'>
                 <Swiper

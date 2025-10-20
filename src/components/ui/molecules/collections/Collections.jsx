@@ -5,9 +5,9 @@ import Image from '../../atom/customImage/Image';
 import { gridStyles } from '../../../../core/constants/gridStyle/gridStyle';
 function Collections() {
     return (
-        <div className='md:w-[1350px] md:h-[1400px] bg-white flex flex-col gap-5'>
+        <div className='hidden md:w-[1350px] md:h-[1400px] bg-white md:flex flex-col gap-5'>
             <P className='md:text-[32px] font-semibold'>Collection</P>
-            <div className='grid grid-cols-2 gap-6 auto-rows-[400px]'>
+            <div className='grid grid-cols-2 gap-10 auto-rows-[400px]'>
                 {collection.map((item, index) => (
                     <React.Fragment key={item.id}>
                         <div className={`relative ${gridStyles[index]}`}>
