@@ -6,7 +6,7 @@ import JoinUpFooter from "../../molecules/joinupfooter/JoinUpFooter";
 import SocialMediaFooter from "../../molecules/socialMediaFooter/SocialMediaFooter";
 function FooterOrganisms() {
     return (
-        <div className="w-full h-[650px] md:w-full md:h-[420px] bg-[#404040] flex flex-col items-center justify-around">
+        <div className="w-full h-[650px] md:w-full md:h-[500px] bg-[#404040] flex flex-col items-center justify-around md:p-7 ">
             <div className="w-full h-[550px] md:w-[1350px] md:h-[300px] flex md:flex-row flex-wrap justify-between">
                 <FooterEmail />
                 <AboutMdimal />

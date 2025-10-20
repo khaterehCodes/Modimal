@@ -2,13 +2,8 @@ import React from 'react';
 import P from '../../atom/customP/P';
 import { collection } from '../../../../core/constants/collection/Collection';
 import Image from '../../atom/customImage/Image';
-function Collections(props) {
-    const gridStyles = [
-        'row-span-1 col-span-1',
-        'row-span-2 col-span-1',
-        'row-span-2 col-span-1',
-        'row-span-1 col-span-1',
-    ];
+import { gridStyles } from '../../../../core/constants/gridStyle/gridStyle';
+function Collections() {
     return (
         <div className='md:w-[1350px] md:h-[1400px] bg-white flex flex-col gap-5'>
             <P className='md:text-[32px] font-semibold'>Collection</P>
