@@ -2,7 +2,12 @@ import React from "react";
 import { collectionTab } from "../../../../core/constants/collectionTab/CollectionTab";
 import P from '../../atom/customP/P';
 import CollectionsItems from "../collectionItems/CollectionsItems";
-function CollectionTab({selectedTab, setSelectedTab}) {
+function CollectionTab({ selectedTab, setSelectedTab }) {
+    if (selectedTab) {
+        document.body.style.overflow = 'hidden'
+    } else {
+        document.body.style.overflow = 'auto'
+    }
     return (
         <>
             {selectedTab && (

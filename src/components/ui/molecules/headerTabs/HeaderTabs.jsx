@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { headerTabs } from '../../../../core/constants/headerTabs/HeaderTabs';
 import Button from '../../atom/customButton/Button';
 import CollectionTab from '../collectionTab/CollectionTab';
+import NewInMenu from '../newInMenu/NewInMenu';
+import PlusSizeTab from '../plusSizeTab/PlusSizeTab';
+import SustainabilityTab from '../sustainabilityTab/SustainabilityTab';
 function HeaderTabs() {
     const [selectedTab, setSelectedTab] = useState(null)
     return (
@@ -16,6 +19,9 @@ function HeaderTabs() {
                 </React.Fragment>
             ))}
             {selectedTab === 1 && <CollectionTab selectedTab={selectedTab} setSelectedTab={setSelectedTab} />}
+            {selectedTab === 2 && <NewInMenu selectedTab={selectedTab} setSelectedTab={setSelectedTab} />}
+            {selectedTab === 4 && <PlusSizeTab selectedTab={selectedTab} setSelectedTab={setSelectedTab} />}
+            {selectedTab ===5 && <SustainabilityTab selectedTab={selectedTab} setSelectedTab={setSelectedTab}/>}
         </div>
     );
 }
