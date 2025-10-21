@@ -13,7 +13,7 @@ function HeaderTabs() {
                 <React.Fragment key={item.id}>
                     <Button
                         onClick={() => setSelectedTab(item.id)}
-                        className='text-[#404040] md:text-[18px]'>
+                        className={`${selectedTab === item.id ? 'text-black font-medium' : 'text-[#404040]'} md:text-[18px]`}>
                         {item.name}
                     </Button>
                 </React.Fragment>
@@ -21,7 +21,7 @@ function HeaderTabs() {
             {selectedTab === 1 && <CollectionTab selectedTab={selectedTab} setSelectedTab={setSelectedTab} />}
             {selectedTab === 2 && <NewInMenu selectedTab={selectedTab} setSelectedTab={setSelectedTab} />}
             {selectedTab === 4 && <PlusSizeTab selectedTab={selectedTab} setSelectedTab={setSelectedTab} />}
-            {selectedTab ===5 && <SustainabilityTab selectedTab={selectedTab} setSelectedTab={setSelectedTab}/>}
+            {selectedTab === 5 && <SustainabilityTab selectedTab={selectedTab} setSelectedTab={setSelectedTab} />}
         </div>
     );
 }
