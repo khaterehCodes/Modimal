@@ -2,8 +2,9 @@ import { useState } from "react";
 import Button from "../../atom/customButton/Button";
 import Icon from "../../atom/icons/Icon";
 import HeaderMenuRes from "../headerMenuRes/HeaderMenuRes";
+import SearchModal from "../searchModal/SearchModal";
 
-function HambergerIcon() {
+function HambergerIcon({ openSearch, setOpenSearch }) {
     const [clickHamberger, setClickHamberger] = useState(false)
     return (
         <>
@@ -11,9 +12,12 @@ function HambergerIcon() {
                 <Button onClick={() => setClickHamberger(!clickHamberger)}>
                     {clickHamberger ? (<Icon name={'closeHamberger'} />) : (<Icon name={'hamberger'} />)}
                 </Button>
-                <Icon name={'searchIcon'} />
+                <Button onClick={() => setOpenSearch(!openSearch)}>
+                    {openSearch ? (<Icon name={'closeIcon'} />) : (<Icon name={'searchIcon'} />)}
+                </Button>
             </div>
-            <HeaderMenuRes  clickHamberger={clickHamberger} setClickHamberger={setClickHamberger}/>
+            <HeaderMenuRes clickHamberger={clickHamberger} setClickHamberger={setClickHamberger} />
+            <SearchModal openSearch={openSearch} />
         </>
     );
 }
