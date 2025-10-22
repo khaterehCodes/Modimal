@@ -3,7 +3,7 @@ import { headerIcons } from '../../../../core/constants/headerIcons/HeaderIcons'
 import Icon from '../../atom/icons/Icon';
 import Button from '../../atom/customButton/Button';
 import SearchModal from '../searchModal/SearchModal';
-function HeaderIcons({openSearch,setOpenSearch}) {
+function HeaderIcons({ openSearch, setOpenSearch }) {
     const [clickIcon, setClickIcon] = useState(null)
     const iconsClickHandler = (id) => {
         setClickIcon((prev) => prev === id ? null : id)
@@ -26,7 +26,7 @@ function HeaderIcons({openSearch,setOpenSearch}) {
                             <Icon name={item.icon} />
                         )}
                     </Button>
-                    {item.id === 1 && (<SearchModal openSearch={openSearch} />)}
+                    {item.id === 1 && (<SearchModal openSearch={openSearch} setOpenSearch={setOpenSearch} />)}
                 </React.Fragment>
             ))}
         </div>
