@@ -1,13 +1,14 @@
 import Icon from "../../atom/icons/Icon";
 import Input from '../../atom/customInput/Input';
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { UseSearch } from "../../../../core/context/searchContext/SearchContext";
+import Button from "../../atom/customButton/Button";
 function SearchModal({ openSearch, setOpenSearch }) {
     const navigate = useNavigate();
-    const [valueInput, setValueinput] = useState('')
+    const { searchValue, setSearchValue } = UseSearch();
     const serachInputHandler = (event) => {
-        setValueinput(event.target.value)
-        if (valueInput.trim() !== '') {
+        setSearchValue(event.target.value)
+        if (searchValue.trim() !== '') {
             navigate('/filter')
             setOpenSearch(false)
         }
@@ -29,7 +30,10 @@ function SearchModal({ openSearch, setOpenSearch }) {
                             <div className="md:hidden">
                                 <Icon name={'graySerachIconSM'} />
                             </div>
-                            <Input onChange={serachInputHandler} placeholder='Search' className='md:w-[1300px] md:h-full' />
+                            <Input onChange={serachInputHandler} value={searchValue} placeholder='Search' className='md:w-[1280px] md:h-full outline-none' />
+                            <Button onClick={()=>setSearchValue('')}>
+                                {searchValue !== '' ?  (<Icon name={'cleanInput'} />):''}
+                            </Button>
                         </div>
                     </div>
                 </div>
