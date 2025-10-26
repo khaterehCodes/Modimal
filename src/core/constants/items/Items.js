@@ -194,4 +194,29 @@ export const items = [
             { id: 1, color: '#0C0C0C' },
         ]
     },
+    {
+        id: 17,
+        name: 'Easy In Short',
+        price: 130,
+        description: 'Turn It Up Short',
+        img: '/assets/images/item17.png',
+        category: 'shorts',
+        colors: [
+            { id: 1, color: '#0C0C0C' },
+            { id: 2, color: '#909225' },
+            { id: 3, color: '#748C70' },
+        ]
+    },
+    {
+        id: 18,
+        name: 'Easy Shirt',
+        price: 199,
+        description: 'Turn It Up Shirt',
+        img: '/assets/images/item18.png',
+        category: 'shirt',
+        colors: [
+            { id: 1, color: '#909225' },
+            { id: 2, color: '#CA2980' },
+        ]
+    },
 ]
