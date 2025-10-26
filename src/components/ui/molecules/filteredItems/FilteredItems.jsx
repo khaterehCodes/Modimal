@@ -4,7 +4,6 @@ import P from "../../atom/customP/P";
 import Filters from "../filters/Filters";
 
 function FilteredItems({ filterItems }) {
-    console.log(filterItems.length);
     return (
         <div className="md:w-[1350px] h-auto flex justify-between items-start">
             <div className="md:w-[400px] h-auto">
