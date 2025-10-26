@@ -1,12 +1,15 @@
 import React from "react";
 import Image from "../../atom/customImage/Image";
 import P from "../../atom/customP/P";
+import Filters from "../filters/Filters";
 
 function FilteredItems({ filterItems }) {
     console.log(filterItems.length);
     return (
-        <div className="md:w-[1350px] h-auto flex justify-between">
-            <div className="md:w-[400px] h-auto bg-lime-300"></div>
+        <div className="md:w-[1350px] h-auto flex justify-between items-start">
+            <div className="md:w-[400px] h-auto">
+                <Filters />
+            </div>
             <div className="md:w-[850px] h-auto flex flex-wrap items-center justify-between">
                 {filterItems.map((item) => (
                     <React.Fragment key={item.id}>

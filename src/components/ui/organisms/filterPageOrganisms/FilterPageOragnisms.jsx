@@ -17,7 +17,7 @@ function FilterPageOragnisms() {
         setFilterItems(filtered);
     }, [searchValue])
     return (
-        <div className="w-full h-auto flex flex-col items-center gap-3">
+        <div className="w-full h-auto flex flex-col items-center gap-3 md:mb-[50px]">
             <SearchFilter />
             <div className="md:w-[1350px] md:h-[100px] flex items-center justify-center">
                 <P className='md:text-[20px]'>{filterItems.length} items</P>
