@@ -19,7 +19,7 @@ function FilterNames({ clearAllFilters, removeFilterName, selectedFilter }) {
                     ))
                 )}
             </div>
-            <div className='md:w-full md:h-[40px] flex items-center justify-between'>
+            <div className='md:w-full md:h-[40px] md:flex items-center justify-between hidden'>
                 <Button onClick={clearAllFilters} className='md:w-1/2 md:h-full text-[#748C70] bg-white'>Clear All Filters</Button>
                 <Button className='md:w-1/2 md:h-full bg-[#748C70] text-white'>applied filters</Button>
             </div>

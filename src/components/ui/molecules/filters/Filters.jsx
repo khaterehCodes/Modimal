@@ -5,29 +5,10 @@ import Button from '../../atom/customButton/Button';
 import Icon from '../../atom/icons/Icon';
 import Input from '../../atom/customInput/Input';
 import FilterNames from '../filterNames/FilterNames';
-function Filters() {
-    const [openFilter, setOpenFilter] = useState({ 1: false, 2: false, 3: false, 4: false, 5: false });
-    const clickFilterHandler = (id) => {
-        setOpenFilter((prev) => ({ ...prev, [id]: !prev[id] }))
-    };
-    const [selectedFilter, setSelectedFilter] = useState({});
-    const selectFilterHandler = (id, item) => {
-        setSelectedFilter((prev) => ({ ...prev, [id]: item }))
-    }
-    const removeFilterName = (id) => {
-        setSelectedFilter((prev) => {
-            const currentkey = { ...prev }
-            delete currentkey[id]
-            return currentkey
-        })
-    }
-    const clearAllFilters = () => {
-        setSelectedFilter({})
-        setOpenFilter(false)
-    }
+function Filters({ clearAllFilters, removeFilterName, selectFilterHandler, selectedFilter, clickFilterHandler, openFilter, setOpenFilter }) {
     return (
-        <div className='md:w-[400px] w-full h-auto md:flex flex-row  hidden'>
-            <P className='font-semibold md:text-[32px] md:flex hidden'>filters</P>
+        <div className='md:w-[400px] w-full h-auto md:flex flex-col hidden'>
+            <P className='font-semibold md:text-[32px] md:flex hidden'>Filters</P>
             <FilterNames clearAllFilters={clearAllFilters} removeFilterName={removeFilterName} selectedFilter={selectedFilter} />
             <div className='md:w-full md:h-auto flex flex-col gap-3'>
                 {filteres.map((item) => (

@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
 import Button from '../../atom/customButton/Button';
 import Icon from '../../atom/icons/Icon';
 import Input from '../../atom/customInput/Input';
 import P from '../../atom/customP/P';
 import { filteres } from '../../../../core/constants/filters/Filteres';
 import { useNavigate } from 'react-router-dom';
+import React from 'react';
 function FiltersItemRes({ clearAllFilters, selectFilterHandler, selectedFilter, clickFilterHandler, openFilter, setOpenFilter, setSelectedFilter }) {
     const navigate = useNavigate();
     return (
