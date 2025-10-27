@@ -17,7 +17,7 @@ function HambergerIcon({ openSearch, setOpenSearch }) {
                 </Button>
             </div>
             <HeaderMenuRes clickHamberger={clickHamberger} setClickHamberger={setClickHamberger} />
-            <SearchModal openSearch={openSearch} />
+            <SearchModal openSearch={openSearch} setOpenSearch={setOpenSearch} />
         </>
     );
 }
