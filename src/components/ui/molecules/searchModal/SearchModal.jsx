@@ -30,7 +30,7 @@ function SearchModal({ openSearch, setOpenSearch }) {
                             <div className="md:hidden">
                                 <Icon name={'graySerachIconSM'} />
                             </div>
-                            <Input onChange={serachInputHandler} value={searchValue} placeholder='Search' className='md:w-[1280px] md:h-full outline-none' />
+                            <Input onChange={serachInputHandler} value={searchValue} placeholder='Search' className='md:w-[1280px] w-[260px] md:h-full outline-none' />
                             <Button onClick={() => setSearchValue('')}>
                                 {searchValue !== '' ? (<Icon name={'cleanInput'} />) : ''}
                             </Button>

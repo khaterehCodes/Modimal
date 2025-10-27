@@ -4,7 +4,7 @@ import Button from '../../atom/customButton/Button';
 import Icon from '../../atom/icons/Icon';
 function FilterNames({ clearAllFilters, removeFilterName, selectedFilter }) {
     return (
-        <div className='md:w-full md:h-auto flex flex-col md:gap-2 md:mb-[20px]'>
+        <div className='md:w-full md:h-auto md:flex flex-col md:gap-2 md:mb-[20px]'>
             <div className='md:w-full md:h-auto flex flex-wrap justify-between items-center md:gap-3'>
                 {Object.keys(selectedFilter).length > 0 && (
                     Object.entries(selectedFilter).map(([key, value]) => (
@@ -19,7 +19,7 @@ function FilterNames({ clearAllFilters, removeFilterName, selectedFilter }) {
                     ))
                 )}
             </div>
-            <div className='md:w-full md:h-[40px] bg-pink-600 flex items-center justify-between'>
+            <div className='md:w-full md:h-[40px] flex items-center justify-between'>
                 <Button onClick={clearAllFilters} className='md:w-1/2 md:h-full text-[#748C70] bg-white'>Clear All Filters</Button>
                 <Button className='md:w-1/2 md:h-full bg-[#748C70] text-white'>applied filters</Button>
             </div>

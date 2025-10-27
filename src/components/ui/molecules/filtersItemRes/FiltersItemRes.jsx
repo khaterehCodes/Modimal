@@ -1,34 +1,14 @@
 import React, { useState } from 'react';
-import P from '../../atom/customP/P';
-import { filteres } from '../../../../core/constants/filters/Filteres';
 import Button from '../../atom/customButton/Button';
 import Icon from '../../atom/icons/Icon';
 import Input from '../../atom/customInput/Input';
-import FilterNames from '../filterNames/FilterNames';
-function Filters() {
-    const [openFilter, setOpenFilter] = useState({ 1: false, 2: false, 3: false, 4: false, 5: false });
-    const clickFilterHandler = (id) => {
-        setOpenFilter((prev) => ({ ...prev, [id]: !prev[id] }))
-    };
-    const [selectedFilter, setSelectedFilter] = useState({});
-    const selectFilterHandler = (id, item) => {
-        setSelectedFilter((prev) => ({ ...prev, [id]: item }))
-    }
-    const removeFilterName = (id) => {
-        setSelectedFilter((prev) => {
-            const currentkey = { ...prev }
-            delete currentkey[id]
-            return currentkey
-        })
-    }
-    const clearAllFilters = () => {
-        setSelectedFilter({})
-        setOpenFilter(false)
-    }
+import P from '../../atom/customP/P';
+import { filteres } from '../../../../core/constants/filters/Filteres';
+import { useNavigate } from 'react-router-dom';
+function FiltersItemRes({ clearAllFilters, selectFilterHandler, selectedFilter, clickFilterHandler, openFilter, setOpenFilter, setSelectedFilter }) {
+    const navigate = useNavigate();
     return (
-        <div className='md:w-[400px] w-full h-auto md:flex flex-row  hidden'>
-            <P className='font-semibold md:text-[32px] md:flex hidden'>filters</P>
-            <FilterNames clearAllFilters={clearAllFilters} removeFilterName={removeFilterName} selectedFilter={selectedFilter} />
+        <div className='md:w-[400px] w-full h-auto flex md:flex-row flex-col'>
             <div className='md:w-full md:h-auto flex flex-col gap-3'>
                 {filteres.map((item) => (
                     <React.Fragment key={item.id}>
@@ -69,7 +49,20 @@ function Filters() {
                 ))
                 }
             </div >
+            <div className='w-[340px] h-[50px] bg-green-300 flex md:hidden mt-[100px]'>
+                <Button
+                    onClick={clearAllFilters}
+                    className='w-1/2 h-full text-[#5A6D57] bg-white'>
+                    Clear filter
+                </Button>
+                <Button
+                    onClick={() => navigate('/filter')}
+                    className='w-1/2 h-full bg-[#5A6D57] text-white'>
+                    Apply filter
+                </Button>
+            </div>
         </div >
     );
 }
-export default Filters;
+
+export default FiltersItemRes;
