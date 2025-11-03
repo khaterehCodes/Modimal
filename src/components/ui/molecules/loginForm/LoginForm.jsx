@@ -7,45 +7,34 @@ import { Link } from 'react-router-dom';
 import { registerIcons } from '../../../../core/constants/registerIcons/RegisterIcons';
 import React, { useState } from 'react';
 import Icon from '../../atom/icons/Icon';
-import SignupVerify from '../signupVerify/SignupVerify';
-const signupSchima = Yup.object({
-    name: Yup.string().required(),
-    lastName: Yup.string().required(),
+import LoginVerify from '../loginVerify/LoginVerify';
+const loginSchima = Yup.object({
     email: Yup.string().required(),
     password: Yup.string().required()
 })
-function SignupForm() {
-    const [email, setEmail] = useState('')
+function LoginForm() {
     const [showVerify, setShowVerify] = useState(false)
     return (
         <div className='md:w-[500px] md:h-[630px] flex flex-col items-center justify-around'>
-            <P className='font-semibold md:text-[32px]'>Create Account</P>
+            <P className='font-semibold md:text-[32px]'>Log in</P>
             <Formik
-                initialValues={{ name: '', lastName: '', email: '', password: '' }}
-                validationSchema={signupSchima}
+                initialValues={{ email: '', password: '' }}
+                validationSchema={loginSchima}
                 onSubmit={(values, { resetForm, setSubmitting }) => {
-                    setEmail(values.email)
                     setShowVerify(true)
                     setSubmitting(false)
                     resetForm()
                 }} >
-                <Form className='md:w-[400px] md:h-[250px] flex flex-col justify-between'>
-                    <Field as={Input} name='name' placeHolder='First Name' className='md:w-full md:h-[40px] border border-[#606060] outline-none p-2' />
-                    <Field as={Input} name='lastName' placeHolder='Last Name' className='md:w-full md:h-[40px] border border-[#606060] outline-none p-2' />
+                <Form className='md:w-[400px] md:h-[170px] flex flex-col justify-between'>
                     <Field as={Input} name='email' type='email' placeHolder='Email' className='md:w-full md:h-[40px] border border-[#606060] outline-none p-2' />
                     <Field as={Input} name='password' placeHolder='Password' className='md:w-full md:h-[40px] border border-[#606060] outline-none p-2' />
+                    <P className='text-[#748C70]'>Forgot Your Password?</P>
                     <Button type='submit' className='md:w-full md:h-[40px] bg-[#5A6D57] text-white'>
-                        Register Now
+                        log in
                     </Button>
                 </Form>
             </Formik>
-            <div className='md:w-[400px] md:h-[280px] flex flex-col items-center justify-around'>
-                <div className='md:w-[300px] md:h-[40px] flex items-center md:gap-4 justify-center'>
-                    <P className='text-[14px]'>Already have an account?</P>
-                    <Link to='/login'>
-                        <P className='text-[#748C70] md:text-[14px]'>Log in</P>
-                    </Link>
-                </div>
+            <div className='md:w-[400px] md:h-[220px] flex flex-col items-center justify-around'>
                 <P className='md:text-[12px]'>Or</P>
                 <div className='md:w-[140px] md:h-[40px] flex items-center justify-around'>
                     {registerIcons.map((icon, index) => (
@@ -54,13 +43,16 @@ function SignupForm() {
                         </React.Fragment>
                     ))}
                 </div>
-                <div className='md:w-full md:h-[50px] flex justify-center flex-wrap items-center md:text-[12px] text-center gap-1'>
-                    By Clicking Register Now’’you Agree To <P className='text-[#748C70] border-b border-[#748C70]'>Terms& Conditions</P> And <P className='text-[#748C70] border-b border-[#748C70]'>Privacy Policy</P>
+                <div className='md:w-[300px] md:h-[40px] flex items-center md:gap-2 justify-center'>
+                    <P className='text-[14px]'>New To Modimal?</P>
+                    <Link to='/signup'>
+                        <P className='text-[#748C70] md:text-[14px]'>Create An Account</P>
+                    </Link>
                 </div>
             </div>
-            <SignupVerify showVerify={showVerify} setShowVerify={setShowVerify} email={email} />
+            <LoginVerify showVerify={showVerify} setShowVerify={setShowVerify} />
         </div>
     );
 }
 
-export default SignupForm;
+export default LoginForm;
