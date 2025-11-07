@@ -8,7 +8,7 @@ export const headerIcons = [
         id: 2,
         icon: 'acountIcon',
         selectedIcon: 'selectedProfile',
-        Linked: '/profile'
+        Linked: '/signup'
     },
     {
         id: 3,
