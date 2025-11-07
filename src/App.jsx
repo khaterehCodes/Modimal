@@ -8,6 +8,7 @@ import { WishProvider } from "./core/context/wishContext/WishContext";
 import FilterPageRes from "./pages/filterPageRes/FilterPageRes";
 import SignupPage from "./pages/signupPage/SignupPage";
 import LoginPage from "./pages/loginPage/LoginPage";
+import ProductsPage from "./pages/productsPage/ProductsPage";
 function App() {
   return (
     <BrowserRouter>
@@ -19,8 +20,9 @@ function App() {
               <Route path="/filter" element={<FilterPage />} />
               <Route path="/wishPage" element={<WishPage />} />
               <Route path="/filterRes" element={<FilterPageRes />} />
-              <Route path="signup" element={<SignupPage />} />
-              <Route path="login" element={<LoginPage />} />
+              <Route path="/signup" element={<SignupPage />} />
+              <Route path="/login" element={<LoginPage />} />
+              <Route path="/products" element={<ProductsPage />} />
             </Routes>
           </Layout>
         </SearchProvider>

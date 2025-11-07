@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import P from '../../atom/customP/P';
 import { filteres } from '../../../../core/constants/filters/Filteres';
 import Button from '../../atom/customButton/Button';
