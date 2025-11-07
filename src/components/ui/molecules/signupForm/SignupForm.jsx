@@ -54,7 +54,7 @@ function SignupForm() {
                         </React.Fragment>
                     ))}
                 </div>
-                <div className='md:w-full w-[300px] md:h-[50px] flex justify-center flex-wrap items-center md:text-[12px] text-center gap-1 text-[10px] text-center'>
+                <div className='md:w-full w-[300px] md:h-[50px] flex justify-center flex-wrap items-center md:text-[12px] gap-1 text-[10px] text-center'>
                     By Clicking Register Now’’you Agree To <P className='text-[#748C70] border-b border-[#748C70]'>Terms& Conditions</P> And <P className='text-[#748C70] border-b border-[#748C70]'>Privacy Policy</P>
                 </div>
             </div>
