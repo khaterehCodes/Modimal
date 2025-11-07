@@ -18,8 +18,8 @@ function SignupForm() {
     const [email, setEmail] = useState('')
     const [showVerify, setShowVerify] = useState(false)
     return (
-        <div className='md:w-[500px] md:h-[630px] flex flex-col items-center justify-around'>
-            <P className='font-semibold md:text-[32px]'>Create Account</P>
+        <div className='md:w-[500px] w-full h-[550px] md:h-[630px] flex flex-col items-center justify-around'>
+            <P className='md:font-semibold font-bold text-[18px] md:text-[32px]'>Create Account</P>
             <Formik
                 initialValues={{ name: '', lastName: '', email: '', password: '' }}
                 validationSchema={signupSchima}
@@ -29,32 +29,32 @@ function SignupForm() {
                     setSubmitting(false)
                     resetForm()
                 }} >
-                <Form className='md:w-[400px] md:h-[250px] flex flex-col justify-between'>
-                    <Field as={Input} name='name' placeHolder='First Name' className='md:w-full md:h-[40px] border border-[#606060] outline-none p-2' />
-                    <Field as={Input} name='lastName' placeHolder='Last Name' className='md:w-full md:h-[40px] border border-[#606060] outline-none p-2' />
-                    <Field as={Input} name='email' type='email' placeHolder='Email' className='md:w-full md:h-[40px] border border-[#606060] outline-none p-2' />
-                    <Field as={Input} name='password' placeHolder='Password' className='md:w-full md:h-[40px] border border-[#606060] outline-none p-2' />
-                    <Button type='submit' className='md:w-full md:h-[40px] bg-[#5A6D57] text-white'>
+                <Form className='md:w-[400px] w-[330px] h-[250px] md:h-[250px] flex flex-col justify-between'>
+                    <Field as={Input} name='name' placeHolder='First Name' className='w-full md:h-[40px] border border-[#606060] outline-none p-2' />
+                    <Field as={Input} name='lastName' placeHolder='Last Name' className='w-full md:h-[40px] border border-[#606060] outline-none p-2' />
+                    <Field as={Input} name='email' type='email' placeHolder='Email' className='w-full md:h-[40px] border border-[#606060] outline-none p-2' />
+                    <Field as={Input} name='password' placeHolder='Password' className='w-full md:h-[40px] border border-[#606060] outline-none p-2' />
+                    <Button type='submit' className='w-full h-[40px] bg-[#5A6D57] text-white'>
                         Register Now
                     </Button>
                 </Form>
             </Formik>
-            <div className='md:w-[400px] md:h-[280px] flex flex-col items-center justify-around'>
-                <div className='md:w-[300px] md:h-[40px] flex items-center md:gap-4 justify-center'>
+            <div className='md:w-[400px] w-full h-[200px] md:h-[280px] flex flex-col items-center justify-around'>
+                <div className='w-[300px] md:h-[40px] h-[20px] flex items-center md:gap-4 gap-2 justify-center'>
                     <P className='text-[14px]'>Already have an account?</P>
                     <Link to='/login'>
-                        <P className='text-[#748C70] md:text-[14px]'>Log in</P>
+                        <P className='text-[#748C70] text-[14px]'>Log in</P>
                     </Link>
                 </div>
-                <P className='md:text-[12px]'>Or</P>
-                <div className='md:w-[140px] md:h-[40px] flex items-center justify-around'>
+                <P className='text-[12px]'>Or</P>
+                <div className='w-[140px] md:h-[40px] h-[30px] flex items-center justify-around'>
                     {registerIcons.map((icon, index) => (
                         <React.Fragment key={index}>
                             <Icon name={icon} />
                         </React.Fragment>
                     ))}
                 </div>
-                <div className='md:w-full md:h-[50px] flex justify-center flex-wrap items-center md:text-[12px] text-center gap-1'>
+                <div className='md:w-full w-[300px] md:h-[50px] flex justify-center flex-wrap items-center md:text-[12px] text-center gap-1 text-[10px] text-center'>
                     By Clicking Register Now’’you Agree To <P className='text-[#748C70] border-b border-[#748C70]'>Terms& Conditions</P> And <P className='text-[#748C70] border-b border-[#748C70]'>Privacy Policy</P>
                 </div>
             </div>
