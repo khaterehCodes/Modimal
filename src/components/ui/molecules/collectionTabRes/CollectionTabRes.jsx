@@ -1,5 +1,5 @@
 import React from 'react';
-import { collectionTab } from '../../../../core/constants/collectionTab/CollectionTab';
+import { collectionTab } from '../../../../core/constants/collectionTab/Collectiontab';
 import P from '../../atom/customP/P';
 
 function CollectionTabRes({ openTab, }) {
