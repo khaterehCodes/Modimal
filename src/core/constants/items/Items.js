@@ -9,6 +9,13 @@ export const items = [
             { id: 1, color: '#0C0C0C' },
             { id: 2, color: '#7DC3EB' },
             { id: 3, color: '#748C70' },
+        ],
+        detailImg: [
+            '/assets/images/item1.png',
+            '/assets/images/item1.png',
+            '/assets/images/item1.png',
+            '/assets/images/item1.png',
+            '/assets/images/item1.png',
         ]
     },
     {
@@ -21,6 +28,13 @@ export const items = [
             { id: 1, color: '#909225' },
             { id: 2, color: '#19418E' },
             { id: 3, color: '#0C0C0C' },
+        ],
+        detailImg: [
+            '/assets/images/item2.jpg',
+            '/assets/images/item2.jpg',
+            '/assets/images/item2.jpg',
+            '/assets/images/item2.jpg',
+            '/assets/images/item2.jpg',
         ]
     },
     {
@@ -34,6 +48,13 @@ export const items = [
             { id: 1, color: '#D0A5EA' },
             { id: 2, color: '#909225' },
             { id: 3, color: '#748C70' },
+        ],
+        detailImg: [
+            '/assets/images/item3.png',
+            '/assets/images/item3.png',
+            '/assets/images/item3.png',
+            '/assets/images/item3.png',
+            '/assets/images/item3.png',
         ]
     },
     {
@@ -46,6 +67,13 @@ export const items = [
         colors: [
             { id: 1, color: '#7DC3EB' },
             { id: 2, color: '#748C70' },
+        ],
+        detailImg: [
+            '/assets/images/item4.jpg',
+            '/assets/images/item4.jpg',
+            '/assets/images/item4.jpg',
+            '/assets/images/item4.jpg',
+            '/assets/images/item4.jpg',
         ]
     },
     {
@@ -57,6 +85,13 @@ export const items = [
         category: 'pants',
         colors: [
             { id: 1, color: '#0C0C0C' },
+        ],
+        detailImg: [
+            '/assets/images/item5.jpg',
+            '/assets/images/item5.jpg',
+            '/assets/images/item5.jpg',
+            '/assets/images/item5.jpg',
+            '/assets/images/item5.jpg',
         ]
     },
     {
@@ -70,6 +105,13 @@ export const items = [
             { id: 1, color: '#0C0C0C' },
             { id: 2, color: '#CA2929' },
             { id: 3, color: '#748C70' },
+        ],
+        detailImg: [
+            '/assets/images/item6.jpg',
+            '/assets/images/item6.jpg',
+            '/assets/images/item6.jpg',
+            '/assets/images/item6.jpg',
+            '/assets/images/item6.jpg',
         ]
     },
     {
@@ -83,6 +125,13 @@ export const items = [
             { id: 1, color: '#0C0C0C' },
             { id: 2, color: '#909225' },
             { id: 3, color: '#748C70' },
+        ],
+        detailImg: [
+            '/assets/images/item7.jpg',
+            '/assets/images/item7.jpg',
+            '/assets/images/item7.jpg',
+            '/assets/images/item7.jpg',
+            '/assets/images/item7.jpg',
         ]
     },
     {
@@ -95,6 +144,13 @@ export const items = [
         colors: [
             { id: 1, color: '#0C0C0C' },
             { id: 2, color: '#748C70' },
+        ],
+        detailImg: [
+            '/assets/images/item8.png',
+            '/assets/images/item8.png',
+            '/assets/images/item8.png',
+            '/assets/images/item8.png',
+            '/assets/images/item8.png',
         ]
     },
     {
@@ -107,6 +163,13 @@ export const items = [
         colors: [
             { id: 1, color: '#0C0C0C' },
             { id: 2, color: '#D0A5EA' },
+        ],
+        detailImg: [
+            '/assets/images/item9.jpg',
+            '/assets/images/item9.jpg',
+            '/assets/images/item9.jpg',
+            '/assets/images/item9.jpg',
+            '/assets/images/item9.jpg',
         ]
     },
     {
@@ -118,6 +181,13 @@ export const items = [
         category: 'top',
         colors: [
             { id: 1, color: '#909225' },
+        ],
+        detailImg: [
+            '/assets/images/item10.png',
+            '/assets/images/item10.png',
+            '/assets/images/item10.png',
+            '/assets/images/item10.png',
+            '/assets/images/item10.png',
         ]
     },
     {
@@ -131,6 +201,13 @@ export const items = [
             { id: 1, color: '#0C0C0C' },
             { id: 2, color: '#7DC3EB' },
             { id: 3, color: '#748C70' },
+        ],
+        detailImg: [
+            '/assets/images/item11.png',
+            '/assets/images/item11.png',
+            '/assets/images/item11.png',
+            '/assets/images/item11.png',
+            '/assets/images/item11.png',
         ]
     },
     {
@@ -144,6 +221,13 @@ export const items = [
             { id: 1, color: '#0C0C0C' },
             { id: 2, color: '#7DC3EB' },
             { id: 3, color: '#748C70' },
+        ],
+        detailImg: [
+            '/assets/images/item12.png',
+            '/assets/images/item12.png',
+            '/assets/images/item12.png',
+            '/assets/images/item12.png',
+            '/assets/images/item12.png',
         ]
     },
     {
@@ -156,6 +240,13 @@ export const items = [
         colors: [
             { id: 1, color: '#909225' },
             { id: 2, color: '#CA6D29' },
+        ],
+        detailImg: [
+            '/assets/images/item13.png',
+            '/assets/images/item13.png',
+            '/assets/images/item13.png',
+            '/assets/images/item13.png',
+            '/assets/images/item13.png',
         ]
     },
     {
@@ -169,6 +260,13 @@ export const items = [
             { id: 1, color: '#0C0C0C' },
             { id: 2, color: '#19418E' },
             { id: 3, color: '#748C70' },
+        ],
+        detailImg: [
+            '/assets/images/item14.jpg',
+            '/assets/images/item14.jpg',
+            '/assets/images/item14.jpg',
+            '/assets/images/item14.jpg',
+            '/assets/images/item14.jpg',
         ]
     },
     {
@@ -181,6 +279,13 @@ export const items = [
         colors: [
             { id: 1, color: '#0C0C0C' },
             { id: 2, color: '#748C70' },
+        ],
+        detailImg: [
+            '/assets/images/item15.jpg',
+            '/assets/images/item15.jpg',
+            '/assets/images/item15.jpg',
+            '/assets/images/item15.jpg',
+            '/assets/images/item15.jpg',
         ]
     },
     {
@@ -192,6 +297,13 @@ export const items = [
         category: 'pants',
         colors: [
             { id: 1, color: '#0C0C0C' },
+        ],
+        detailImg: [
+            '/assets/images/item16.png',
+            '/assets/images/item16.png',
+            '/assets/images/item16.png',
+            '/assets/images/item16.png',
+            '/assets/images/item16.png',
         ]
     },
     {
@@ -205,6 +317,13 @@ export const items = [
             { id: 1, color: '#0C0C0C' },
             { id: 2, color: '#909225' },
             { id: 3, color: '#748C70' },
+        ],
+        detailImg: [
+            '/assets/images/item17.png',
+            '/assets/images/item17.png',
+            '/assets/images/item17.png',
+            '/assets/images/item17.png',
+            '/assets/images/item17.png',
         ]
     },
     {
@@ -217,6 +336,13 @@ export const items = [
         colors: [
             { id: 1, color: '#909225' },
             { id: 2, color: '#CA2980' },
+        ],
+        detailImg: [
+            '/assets/images/item18.png',
+            '/assets/images/item18.png',
+            '/assets/images/item18.png',
+            '/assets/images/item18.png',
+            '/assets/images/item18.png',
         ]
     },
 ]
