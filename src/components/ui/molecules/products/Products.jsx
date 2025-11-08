@@ -45,7 +45,7 @@ function Products() {
                 )
             })}
             {showItems < items.length && (
-                <div className='w-full md:h-[50px] bg-purple-300 flex items-center justify-center'>
+                <div className='w-full md:h-[50px] flex items-center justify-center'>
                     <Button
                         onClick={loadMoreHandler}
                         className='md:w-[185px] md:h-[40px] border border-[#5A6D57] text-[#5A6D57]'>
