@@ -3,6 +3,7 @@ import { items } from "../../../../core/constants/items/Items";
 import DetailPathName from "../../molecules/detailPathName/DetailPathName";
 import DetailsPicture from "../../molecules/detailsPicture/DetailsPicture";
 import DetailInfo from "../../molecules/detailInfo/DetailInfo";
+import DetailDescription from "../../molecules/detailDescription/DetailDescription";
 
 function DetailPageOrganisms() {
     const { id } = useParams()
@@ -14,8 +15,9 @@ function DetailPageOrganisms() {
             </div>
             <div className="md:w-[1350px] md:h-[550px] flex justify-between">
                 <DetailsPicture findItems={findItems} />
-                <DetailInfo findItems={findItems}/>
+                <DetailInfo findItems={findItems} />
             </div>
+            <DetailDescription />
         </div>
     );
 }
