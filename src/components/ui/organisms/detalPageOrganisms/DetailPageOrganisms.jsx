@@ -4,6 +4,7 @@ import DetailPathName from "../../molecules/detailPathName/DetailPathName";
 import DetailsPicture from "../../molecules/detailsPicture/DetailsPicture";
 import DetailInfo from "../../molecules/detailInfo/DetailInfo";
 import DetailDescription from "../../molecules/detailDescription/DetailDescription";
+import MayAlsoLike from "../../molecules/mayAlsoLike/MayAlsoLike";
 
 function DetailPageOrganisms() {
     const { id } = useParams()
@@ -18,6 +19,7 @@ function DetailPageOrganisms() {
                 <DetailInfo findItems={findItems} />
             </div>
             <DetailDescription />
+            <MayAlsoLike />
         </div>
     );
 }
