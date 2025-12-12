@@ -345,4 +345,239 @@ export const items = [
             '/assets/images/item18.png',
         ]
     },
+    {
+        id: 19,
+        name: 'Essential Dress',
+        price: 195, description: 'Turn It Up Dress',
+        img: '/assets/images/item19.png',
+        category: 'dress',
+        colors: [
+            { id: 1, color: '#0C0C0C' },
+            { id: 2, color: '#7DC3EB' },
+            { id: 3, color: '#D0A5EA' },
+        ],
+        detailImg: [
+            '/assets/images/item19.png',
+            '/assets/images/item19.png',
+            '/assets/images/item19.png',
+            '/assets/images/item19.png',
+            '/assets/images/item19.png',
+        ]
+    },
+    {
+        id: 20,
+        name: 'Chill Dress',
+        price: 260, description: 'Turn It Up Dress',
+        img: '/assets/images/item20.jpg',
+        category: 'dress',
+        colors: [
+            { id: 1, color: '#909225' },
+        ],
+        detailImg: [
+            '/assets/images/item20.jpg',
+            '/assets/images/item20.jpg',
+            '/assets/images/item20.jpg',
+            '/assets/images/item20.jpg',
+            '/assets/images/item20.jpg',
+        ]
+    },
+    {
+        id: 21,
+        name: 'Crop It Up Pants',
+        price: 145, description: 'Turn It Up Pants',
+        img: '/assets/images/item21.jpg',
+        category: 'pants',
+        colors: [
+            { id: 1, color: '#748C70' },
+        ],
+        detailImg: [
+            '/assets/images/item21.jpg',
+            '/assets/images/item21.jpg',
+            '/assets/images/item21.jpg',
+            '/assets/images/item21.jpg',
+            '/assets/images/item21.jpg',
+        ]
+    },
+    {
+        id: 22,
+        name: 'Easy Skirt ',
+        price: 109, description: 'Turn It Up Pants',
+        img: '/assets/images/item22.jpg',
+        category: 'pants',
+        colors: [
+            { id: 1, color: '#909225' },
+            { id: 2, color: '#19418E' },
+        ],
+        detailImg: [
+            '/assets/images/item22.jpg',
+            '/assets/images/item22.jpg',
+            '/assets/images/item22.jpg',
+            '/assets/images/item22.jpg',
+            '/assets/images/item22.jpg',
+        ]
+    },
+    {
+        id: 23,
+        name: 'Casual Pants ',
+        price: 85, description: 'Turn It Up Pants',
+        img: '/assets/images/item23.jpg',
+        category: 'pants',
+        colors: [
+            { id: 1, color: '#909225' },
+            { id: 2, color: '#7DC3EB' },
+            { id: 3, color: '#CA6D29' },
+        ],
+        detailImg: [
+            '/assets/images/item23.jpg',
+            '/assets/images/item23.jpg',
+            '/assets/images/item23.jpg',
+            '/assets/images/item23.jpg',
+            '/assets/images/item23.jpg',
+        ]
+    },
+    {
+        id: 24,
+        name: 'Mockneck Sweater ',
+        price: 70, description: 'Turn It Up Dress',
+        img: '/assets/images/item24.jpg',
+        category: 'dress',
+        colors: [
+            { id: 1, color: '#0C0C0C' },
+            { id: 2, color: '#909225' },
+            { id: 3, color: '#748C70' },
+        ],
+        detailImg: [
+            '/assets/images/item24.jpg',
+            '/assets/images/item24.jpg',
+            '/assets/images/item24.jpg',
+            '/assets/images/item24.jpg',
+            '/assets/images/item24.jpg',
+        ]
+    },
+    {
+        id: 25,
+        name: 'Boss Dress ',
+        price: 280, description: 'Turn It Up Dress',
+        img: '/assets/images/item25.jpg',
+        category: 'dress',
+        colors: [
+            { id: 1, color: '#0C0C0C' },
+            { id: 3, color: '#748C70' },
+        ],
+        detailImg: [
+            '/assets/images/item25.jpg',
+            '/assets/images/item25.jpg',
+            '/assets/images/item25.jpg',
+            '/assets/images/item25.jpg',
+            '/assets/images/item25.jpg',
+        ]
+    },
+    {
+        id: 26,
+        name: 'V-Neck Tunic',
+        price: 80, description: 'Turn It Up Dress',
+        img: '/assets/images/item26.jpg',
+        category: 'dress',
+        colors: [
+            { id: 1, color: '#7DC3EB' },
+            { id: 3, color: '#748C70' },
+        ],
+        detailImg: [
+            '/assets/images/item26.jpg',
+            '/assets/images/item26.jpg',
+            '/assets/images/item26.jpg',
+            '/assets/images/item26.jpg',
+            '/assets/images/item26.jpg',
+        ]
+    },
+    {
+        id: 27,
+        name: 'New Age Shirt',
+        price: 80, description: 'Turn It Up Dress',
+        img: '/assets/images/item27.jpg',
+        category: 'dress',
+        colors: [
+            { id: 1, color: '#0C0C0C' },
+            { id: 2, color: '#19418E' },
+            { id: 3, color: '#748C70' },
+        ],
+        detailImg: [
+            '/assets/images/item27.jpg',
+            '/assets/images/item27.jpg',
+            '/assets/images/item27.jpg',
+            '/assets/images/item27.jpg',
+            '/assets/images/item27.jpg',
+        ]
+    },
+    {
+        id: 28,
+        name: 'Boss Dress',
+        price: 260, description: 'Turn It Up Dress',
+        img: '/assets/images/item28.jpg',
+        category: 'dress',
+        colors: [
+            { id: 1, color: '#CA2929' },
+        ],
+        detailImg: [
+            '/assets/images/item28.jpg',
+            '/assets/images/item28.jpg',
+            '/assets/images/item28.jpg',
+            '/assets/images/item28.jpg',
+            '/assets/images/item28.jpg',
+        ]
+    },
+    {
+        id: 29,
+        name: 'Casual Dress',
+        price: 245, description: 'Turn It Up Dress',
+        img: '/assets/images/item29.jpg',
+        category: 'dress',
+        colors: [
+            { id: 1, color: '#0C0C0C' },
+            { id: 2, color: '#7DC3EB' },
+            { id: 3, color: '#748C70' },
+        ],
+        detailImg: [
+            '/assets/images/item29.jpg',
+            '/assets/images/item29.jpg',
+            '/assets/images/item29.jpg',
+            '/assets/images/item29.jpg',
+            '/assets/images/item29.jpg',
+        ]
+    },
+    {
+        id: 30,
+        name: ' Wrap Pants',
+        price: 99, description: 'Turn It Up Pants',
+        img: '/assets/images/item30.jpg',
+        category: 'pants',
+        colors: [
+            { id: 1, color: '#CA6D29' },
+        ],
+        detailImg: [
+            '/assets/images/item30.jpg',
+            '/assets/images/item30.jpg',
+            '/assets/images/item30.jpg',
+            '/assets/images/item30.jpg',
+            '/assets/images/item30.jpg',
+        ]
+    },
+    {
+        id: 31,
+        name: ' Classic Jacket',
+        price: 99, description: 'Turn It Up Dress',
+        img: '/assets/images/item31.jpg',
+        category: 'dress',
+        colors: [
+            { id: 1, color: '#909225' },
+            { id: 1, color: '#7DC3EB' },
+        ],
+        detailImg: [
+            '/assets/images/item31.jpg',
+            '/assets/images/item31.jpg',
+            '/assets/images/item31.jpg',
+            '/assets/images/item31.jpg',
+            '/assets/images/item31.jpg',
+        ]
+    },
 ]
