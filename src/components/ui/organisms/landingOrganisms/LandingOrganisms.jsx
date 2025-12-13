@@ -1,3 +1,4 @@
+import P from "../../atom/customP/P";
 import BestSellerRes from "../../molecules/bestSellerRes/BestSellerRes";
 import Collections from "../../molecules/collections/Collections";
 import IntroLanding from "../../molecules/introLanding/IntroLanding";
@@ -14,7 +15,10 @@ function LandingOrganisms() {
             <BestSellers />
             <BestSellerRes />
             <Collections />
-            <ModiWeek />
+            <div>
+                <P className='md:text-[32px] font-semibold'>Modiweek</P>
+                <ModiWeek />
+            </div>
             <ModiWeekRes />
             <LandingBanner />
             <SocialModimal />

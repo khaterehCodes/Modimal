@@ -570,7 +570,7 @@ export const items = [
         category: 'dress',
         colors: [
             { id: 1, color: '#909225' },
-            { id: 1, color: '#7DC3EB' },
+            { id: 2, color: '#7DC3EB' },
         ],
         detailImg: [
             '/assets/images/item31.jpg',
@@ -578,6 +578,41 @@ export const items = [
             '/assets/images/item31.jpg',
             '/assets/images/item31.jpg',
             '/assets/images/item31.jpg',
+        ]
+    },
+    {
+        id: 32,
+        name: 'FABRIC TRENCH',
+        price: 140, description: 'Turn It Up Dress',
+        img: '/assets/images/item32.png',
+        category: 'dress',
+        colors: [
+            { id: 1, color: '#0C0C0C' },
+        ],
+        detailImg: [
+            '/assets/images/item32.png',
+            '/assets/images/item32.png',
+            '/assets/images/item32.png',
+            '/assets/images/item32.png',
+            '/assets/images/item32.png',
+        ]
+    },
+    {
+        id: 33,
+        name: 'STRUCTURED CORSET',
+        price: 80, description: 'Turn It Up Dress',
+        img: '/assets/images/item33.png',
+        category: 'dress',
+        colors: [
+            { id: 1, color: '#0C0C0C' },
+            { id: 2, color: '#748C70' },
+        ],
+        detailImg: [
+            '/assets/images/item33.png',
+            '/assets/images/item33.png',
+            '/assets/images/item33.png',
+            '/assets/images/item33.png',
+            '/assets/images/item33.png',
         ]
     },
 ]

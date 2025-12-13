@@ -5,17 +5,30 @@ import CollectionTab from '../collectionTab/CollectionTab';
 import NewInMenu from '../newInMenu/NewInMenu';
 import PlusSizeTab from '../plusSizeTab/PlusSizeTab';
 import SustainabilityTab from '../sustainabilityTab/SustainabilityTab';
+import { Link } from 'react-router-dom';
 function HeaderTabs() {
     const [selectedTab, setSelectedTab] = useState(null)
     return (
         <div className='hidden md:w-[650px] md:h-[30px] md:flex items-center justify-between'>
             {headerTabs.map((item) => (
                 <React.Fragment key={item.id}>
-                    <Button
-                        onClick={() => setSelectedTab(item.id)}
-                        className={`${selectedTab === item.id ? 'text-black font-medium' : 'text-[#404040]'} md:text-[18px]`}>
-                        {item.name}
-                    </Button>
+                    {item.link ? (
+                        <>
+                            <Link to='/modiweek'>
+                                <Button
+                                    onClick={() => setSelectedTab(item.id)}
+                                    className={`${selectedTab === item.id ? 'text-black font-medium' : 'text-[#404040]'} md:text-[18px]`}>
+                                    {item.name}
+                                </Button>
+                            </Link>
+                        </>
+                    ) : (<>
+                        <Button
+                            onClick={() => setSelectedTab(item.id)}
+                            className={`${selectedTab === item.id ? 'text-black font-medium' : 'text-[#404040]'} md:text-[18px]`}>
+                            {item.name}
+                        </Button>
+                    </>)}
                 </React.Fragment>
             ))}
             {selectedTab === 1 && <CollectionTab selectedTab={selectedTab} setSelectedTab={setSelectedTab} />}
