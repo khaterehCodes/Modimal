@@ -5,7 +5,7 @@ import Filters from "../filters/Filters";
 import { useWish } from '../../../../core/context/wishContext/WishContext';
 import Icon from '../../atom/icons/Icon';
 import Button from "../../atom/customButton/Button";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import FilterNames from "../filterNames/FilterNames";
 
 function FilteredItems({ filterItems }) {
@@ -52,7 +52,7 @@ function FilteredItems({ filterItems }) {
                     </Button>
                 </div>
                 <div className="md:hidden flex">
-                <FilterNames clearAllFilters={clearAllFilters} removeFilterName={removeFilterName} selectedFilter={selectedFilter} />
+                    <FilterNames clearAllFilters={clearAllFilters} removeFilterName={removeFilterName} selectedFilter={selectedFilter} />
                 </div>
             </div>
             <div className="md:w-[850px] w-full h-auto flex flex-wrap items-center justify-between gap-4 md:gap-0">
@@ -60,29 +60,31 @@ function FilteredItems({ filterItems }) {
                     const IsWish = wishList.some(W => W.id === item.id)
                     return (
                         <React.Fragment key={item.id}>
-                            <div className="md:w-[400px] w-[150px] h-[340px] md:h-[540px] flex flex-col">
-                                <div className='relative'>
-                                    <Image src={item.img} className='w-full h-[210px] md:h-[430px]' />
-                                    <div
-                                        onClick={() => wishHandler(item)}
-                                        className='absolute md:right-[25px] right-[10px] top-[10px] md:top-[25px] cursor-pointer'>
-                                        {IsWish ? (<Icon name={'redHeart'} />) : (<Icon name={'favoriteIcon'} />)}
+                            <Link to={`/products/${item.id}`}>
+                                <div className="md:w-[400px] w-[150px] h-[340px] md:h-[540px] flex flex-col">
+                                    <div className='relative'>
+                                        <Image src={item.img} className='w-full h-[210px] md:h-[430px]' />
+                                        <div
+                                            onClick={() => wishHandler(item)}
+                                            className='absolute md:right-[25px] right-[10px] top-[10px] md:top-[25px] cursor-pointer'>
+                                            {IsWish ? (<Icon name={'redHeart'} />) : (<Icon name={'favoriteIcon'} />)}
+                                        </div>
+                                    </div>
+                                    <P className='font-bold md:text-[16px] text-[14px]'>{item.name}</P>
+                                    <div className="w-full h-[30px] flex items-center justify-between">
+                                        <P className='md:text-[16px] text-[14px]'>{item.description}</P>
+                                        <P className='font-bold md:flex hidden'>${item.price}</P>
+                                    </div>
+                                    <P className='md:hidden w-[130px] h-[30px] flex items-center justify-end text-[14px] font-bold'>${item.price}</P>
+                                    <div className="md:w-auto h-[30px] flex items-center gap-2">
+                                        {item.colors.map((C) => (
+                                            <React.Fragment key={C.id}>
+                                                <div className="md:w-[25px] w-[15px] h-[15px] md:h-[25px] rounded-full" style={{ backgroundColor: C.color }}></div>
+                                            </React.Fragment>
+                                        ))}
                                     </div>
                                 </div>
-                                <P className='font-bold md:text-[16px] text-[14px]'>{item.name}</P>
-                                <div className="w-full h-[30px] flex items-center justify-between">
-                                    <P className='md:text-[16px] text-[14px]'>{item.description}</P>
-                                    <P className='font-bold md:flex hidden'>${item.price}</P>
-                                </div>
-                                <P className='md:hidden w-[130px] h-[30px] flex items-center justify-end text-[14px] font-bold'>${item.price}</P>
-                                <div className="md:w-auto h-[30px] flex items-center gap-2">
-                                    {item.colors.map((C) => (
-                                        <React.Fragment key={C.id}>
-                                            <div className="md:w-[25px] w-[15px] h-[15px] md:h-[25px] rounded-full" style={{ backgroundColor: C.color }}></div>
-                                        </React.Fragment>
-                                    ))}
-                                </div>
-                            </div>
+                            </Link>
                         </React.Fragment>
                     )
                 })}

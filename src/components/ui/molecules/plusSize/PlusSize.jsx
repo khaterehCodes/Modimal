@@ -1,21 +1,20 @@
 import React, { useState } from 'react';
 import { items } from '../../../../core/constants/items/Items';
+import { useWish } from '../../../../core/context/wishContext/WishContext';
+import { Link } from 'react-router-dom';
 import Image from '../../atom/customImage/Image';
 import P from '../../atom/customP/P';
-import { useWish } from '../../../../core/context/wishContext/WishContext';
 import Icon from '../../atom/icons/Icon';
 import Button from '../../atom/customButton/Button';
-import { Link } from 'react-router-dom';
-
-function Products() {
+function PlusSize() {
     const { wishList, wishHandler } = useWish();
-    const [showItems, setShowItems] = useState(6)
+    const [showItems, setShowItems] = useState(25);
     const loadMoreHandler = () => {
         setShowItems(items.length)
     }
     return (
         <div className='w-full h-auto flex flex-wrap items-center justify-between md:gap-5'>
-            {items.slice(0, showItems).map((item) => {
+            {items.slice(19, showItems).map((item) => {
                 const IsWish = wishList.some(W => W.id === item.id)
                 return (
                     <React.Fragment key={item.id}>
@@ -60,4 +59,4 @@ function Products() {
     );
 }
 
-export default Products;
+export default PlusSize;

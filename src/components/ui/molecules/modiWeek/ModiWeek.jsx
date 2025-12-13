@@ -10,7 +10,6 @@ function ModiWeek() {
     const { wishList, wishHandler } = useWish();
     return (
         <div className='hidden md:w-[1350px] md:h-[600px] md:flex flex-col justify-around'>
-            <P className='md:text-[32px] font-semibold'>Modiweek</P>
             <div className='w-full md:h-[500px] flex'>
                 <Swiper
                     loop={true}

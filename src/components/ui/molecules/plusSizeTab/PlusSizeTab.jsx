@@ -2,6 +2,7 @@ import React from 'react';
 import P from '../../atom/customP/P';
 import { plusSize } from '../../../../core/constants/plusSize/PlusSize';
 import PlusSizeItems from '../plusSizeItems/PlusSizeItems';
+import { Link } from 'react-router-dom';
 
 function PlusSizeTab({ selectedTab, setSelectedTab }) {
     if (selectedTab) {
@@ -24,9 +25,15 @@ function PlusSizeTab({ selectedTab, setSelectedTab }) {
                                             <P className='text-[18px] mb-[20px]'>{item.title}</P>
                                             <div className="w-full h-auto flex flex-col gap-2">
                                                 {item.items.map((list, index) => (
-                                                    <React.Fragment key={index}>
-                                                        <P className='text-[#404040] text-[18px] cursor-pointer'>{list}</P>
-                                                    </React.Fragment>
+                                                    <React.Fragment >
+                                                    {list.link ? (
+                                                        <Link to={list.link}>
+                                                            <P className='text-[#404040] text-[18px] cursor-pointer'>{typeof list === 'string' ? list : list.title}</P>
+                                                        </Link>
+                                                    ) : (
+                                                        <P className='text-[#404040] text-[18px] cursor-pointer'>{typeof list === 'string' ? list : list.title}</P>
+                                                    )}
+                                                </React.Fragment>
                                                 ))}
                                             </div>
                                         </div>

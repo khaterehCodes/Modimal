@@ -9,6 +9,9 @@ import FilterPageRes from "./pages/filterPageRes/FilterPageRes";
 import SignupPage from "./pages/signupPage/SignupPage";
 import LoginPage from "./pages/loginPage/LoginPage";
 import ProductsPage from "./pages/productsPage/ProductsPage";
+import DetailPage from "./pages/detailPage/DetailPage";
+import PlusSizePage from "./pages/plusSizePage/PlusSizePage";
+import ModiWeekPage from "./pages/modiWeekPage/ModiWeekPage";
 function App() {
   return (
     <BrowserRouter>
@@ -23,6 +26,9 @@ function App() {
               <Route path="/signup" element={<SignupPage />} />
               <Route path="/login" element={<LoginPage />} />
               <Route path="/products" element={<ProductsPage />} />
+              <Route path="/products/:id" element={<DetailPage />} />
+              <Route path="/plusSize" element={<PlusSizePage />} />
+              <Route path="/modiweek" element={<ModiWeekPage />} />
             </Routes>
           </Layout>
         </SearchProvider>
